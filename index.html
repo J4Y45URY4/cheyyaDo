@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cheyyaDo</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
-<section class="main-section">
-    <div class="start">
+    <script src="js/main.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="start">
         <div class="start-text">
-        <h3>Get things done with <span>cheyyaDo</span></h3>
-        <p>Keep track of your progress with cheyyaDo - The only todo app you need</p>
-    </div>
+          <h3>
+            <span class="desc">Get things done with </span
+            ><span class="logo">cheyyaDo</span>
+          </h3>
+          <p>
+            Keep track of your progress with cheyyaDo - The only todo app you
+            need
+          </p>
+        </div>
         <button onclick="initiate()">Start Organizing</button>
-    </div>
-</section>
-</body>
+      </div>
+      <div class="lists-parent-parent">
+        <div class="lists-parent"></div>
+        <div class="addbtnparent">
+          <button onclick="addList()" class="addbtn">
+            <i class="ri-sticky-note-add-fill"></i>
+          </button>
+          <p>click here to create your first list!</p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
