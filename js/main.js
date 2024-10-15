@@ -1,7 +1,7 @@
 function initiate() {
   let delLet = document.querySelector(".start-text .desc").innerHTML.split("");
   let delLetP = document.querySelector(".start-text p").innerHTML.split("");
-  let startButton = document.querySelector(".start button");
+  let startButton = document.querySelector(".start-btn");
   let delLetButton = startButton.innerHTML.split("");
   let delLetNum = delLetP.length;
   let addBtn = document.querySelector(".addbtnparent");
@@ -40,7 +40,9 @@ function addList() {
       "beforeend",
       "<div class='list-container' id='list-" +
         listId +
-        "'><input type='text' value='New List' class='list-title'></div>"
+        "'><input type='text' value='List " +
+        listId +
+        "' class='list-title'><form class='main-list'><div class='add-todo'><input type='text' placeholder='Add Your List Here'><btn><i class='ri-add-line'></i></btn></div></form></div>"
     );
   document.querySelector("#list-" + listId + " .list-title").focus();
   document.querySelector("#list-" + listId + " .list-title").select();
