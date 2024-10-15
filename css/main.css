@@ -79,7 +79,7 @@ body {
 }
 
 .list-container {
-  width: 25vw;
+  width: 20rem;
   height: 70vh;
   background-color: var(--card-background-color);
   margin: 0 1.5rem;
@@ -110,7 +110,7 @@ body {
 
 .list-container .list-title {
   border: none;
-  background-color: var(--card-background-color);
+  background-color: var(--primary-light);
   text-align: center;
   font-size: 1.5rem;
   width: 90%;
@@ -118,6 +118,8 @@ body {
   margin: 1rem;
   font-weight: 500;
   outline: none;
+  height: 3rem;
+  border-radius: 1rem;
 }
 
 .list-container .list-title:focus {
@@ -160,3 +162,39 @@ body {
   font-size: 1rem;
   margin-top: 1rem;
 }
+.main-list {
+  height: 80%;
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.add-todo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  width: 100%;
+}
+.add-todo input {
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  /* border-radius: 2rem; */
+  margin: 0.5rem;
+  font-weight: 500;
+  outline: none;
+  height: 2rem;
+  border-radius: 1rem;
+  width: 75%;
+}
+.add-todo btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5rem;
+  border: 2px solid var(--primary-dark);
+  color: #16423c;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
